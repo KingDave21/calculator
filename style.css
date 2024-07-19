@@ -4,22 +4,23 @@
     box-sizing: border-box;
 }
 
-html{
-    font-family: "roboto", "Noto Sans", "Helvetica", sans-serif;
+html {
+    font-family: "Roboto", "Noto Sans", "Helvetica", sans-serif;
     font-size: 14px;
     background-color: #3498db;
     height: 100%;
 }
 
-.calculator{
+.calculator {
 
 width: 350px;
 height: auto;
 margin: 70px auto 0;
 overflow: hidden;
-box-shadow: 4px 4px rgba(0,0,0.2);
+box-shadow: 4px 4px rgba(0,0,0,.2);
 
 }
+
 .calculator span {
     -moz-user-select: none;
     user-select: none;
@@ -28,8 +29,7 @@ box-shadow: 4px 4px rgba(0,0,0.2);
 .top {
     position: relative;
     height: 150px;
-    background-color: white;
-
+    background-color: white
 
 }
 .top .unit {
@@ -78,7 +78,7 @@ box-shadow: 4px 4px rgba(0,0,0.2);
 
 .bottom section {
     position: relative;
-    height: 100px;
+    height: 100%;
     float: left;
     display: flex;
 }
@@ -110,7 +110,7 @@ box-shadow: 4px 4px rgba(0,0,0.2);
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: background-color 0.5s;
+    transition: background-color 0.5s;
 }
 
 .keys .column span {
