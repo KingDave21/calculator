@@ -41,4 +41,16 @@ function handlekeypress(e){
         input.innerHTML = operation
         return
     }
+
+    
+    if (key) {
+        if (key === ".") decimalAdded = true
+        operation += key
+        input.innerHTML = operation
+        return 
+    }
 }
+
+keys.forEach(key => {
+    key.addEventListener("click", handlekeypress)
+})
